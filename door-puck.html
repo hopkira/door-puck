@@ -2,8 +2,28 @@
  <head>
  </head>
  <body>
+  <style type="text/css">
+#submit {
+  background-color: #bbb;
+  padding: .5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Oswald';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+
+#submit:hover {
+  border: none;
+  background: orange;
+  box-shadow: 0px 0px 1px #777;
+}
+</style>
   <script src="https://www.puck-js.com/puck.js"></script>
-  <button onclick="Puck.write('LED1.set();\n');">On!</button>
-  <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
+  <button id="submit" onclick="Puck.write('LED1.set();\n');">On Conference Call</button>
+  <button id="submit" onclick="Puck.write('LED1.reset();\n');">Off Conference Call</button>
  </body>
 </html>
