@@ -45,6 +45,28 @@
 }
 #submit2:active {
 	position:relative;
+	top:1px;  
+}	
+#submit3 {
+	background-color:#111111;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:8px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:27px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 15px #000000;
+}
+#submit3:hover {
+ background-color:#050505;
+}
+#submit3:active {
+	position:relative;
 	top:1px;
 }  
 	  
@@ -54,5 +76,8 @@
 	 <br></br>
 	 <br></br>
   <button id="submit" onclick="Puck.write('LED1.reset();LED2.set();\n');">Off Conference Call</button>
+	 <br></br>
+	 <br></br>
+  <button id="submit3" onclick="Puck.write('LED1.reset();LED2.reset();\n');">Off</button>
  </body>
 </html>
